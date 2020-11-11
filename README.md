@@ -4,7 +4,7 @@
 [![](https://img.shields.io/npm/v/stimulus-scroll-progress.svg)](https://www.npmjs.com/package/stimulus-scroll-progress)
 [![](https://github.com/stimulus-components/stimulus-scroll-progress/workflows/Lint/badge.svg)](https://github.com/stimulus-components/stimulus-scroll-progress)
 [![](https://img.shields.io/github/license/stimulus-components/stimulus-scroll-progress.svg)](https://github.com/stimulus-components/stimulus-scroll-progress)
-[![Netlify Status](https://api.netlify.com/api/v1/badges/ac728feb-ab47-48c9-b178-bbc7ca0ddc53/deploy-status)](https://stimulus-scroll-progress.netlify.com)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/8a6c0c4d-2ff0-4da3-ba96-3a14cbad811a/deploy-status)](https://stimulus-scroll-progress.netlify.com)
 
 ## Getting started
 
