@@ -22,7 +22,6 @@ export default class extends Controller {
   }
 
   scroll () {
-    console.log('handle')
     const height = document.documentElement.scrollHeight - document.documentElement.clientHeight
     const width = (window.scrollY / height) * 100
 
