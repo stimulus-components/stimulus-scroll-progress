@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" />
+    <title>Stimulus Scroll Progress</title>
+    <script type="module" src="./src/index.js" defer></script>
+    <script src="https://unpkg.com/stimulus/dist/stimulus.umd.js" defer></script>
+
+    <script type="module" defer>
+      import ScrollProgress from './src/index.js'
+
+      const application = Stimulus.Application.start()
+      application.register('scroll-progress', ScrollProgress)
+    </script>
+
+    <style>
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      li {
+        display: inline-block;
+        margin: 0 10px;
+      }
+
+      a {
+        color: #667eea;
+        display: inline-block;
+      }
+
+      .badges a {
+        margin: 0 0.25rem;
+      }
+
+      pre code {
+        border-radius: 0.5rem;
+        text-align: left;
+        font-family: Menlo, 'Courier New', Courier, monospace;
+      }
+    </style>
+  </head>
+  <body>
+    <div data-controller="scroll-progress" class="h-2 bg-indigo-400 fixed top-0"></div>
+
+    <div class="w-full max-w-6xl mx-auto my-24 p-4">
+      <h1 class="text-center mb-8 text-5xl font-bold">Stimulus Scroll Progress</h1>
+
+      <p class="text-center mb-4">
+        A Stimulus controller to add a progress bar when scrolling.
+      </p>
+
+      <p class="text-center badges">
+        <a href="https://www.npmjs.com/package/stimulus-scroll-progress">
+          <img src="https://img.shields.io/npm/dt/stimulus-scroll-progress.svg" />
+        </a>
+
+        <a href="https://www.npmjs.com/package/stimulus-scroll-progress">
+          <img src="https://img.shields.io/npm/v/stimulus-scroll-progress.svg" />
+        </a>
+
+        <a href="https://github.com/stimulus-components/stimulus-scroll-progress">
+          <img src="https://github.com/stimulus-components/stimulus-scroll-progress/workflows/Lint/badge.svg" />
+        </a>
+
+        <a href="https://github.com/stimulus-components/stimulus-scroll-progress">
+          <img src="https://img.shields.io/github/license/stimulus-components/stimulus-scroll-progress.svg" />
+        </a>
+
+        <a href="https://stimulus-scroll-progress.netlify.com/">
+          <img src="https://api.netlify.com/api/v1/badges/ac728feb-ab47-48c9-b178-bbc7ca0ddc53/deploy-status" />
+        </a>
+      </p>
+
+      <h2 class="text-center text-2xl font-bold my-4">Essential links</h2>
+
+      <ul class="text-center mb-8">
+        <li>
+          <a href="https://github.com/stimulus-components/stimulus-scroll-progress" target="_blank" rel="noopener">
+            Github
+          </a>
+        </li>
+
+        <li>
+          <a href="https://www.npmjs.com/package/stimulus-scroll-progress" target="_blank" rel="noopener">
+            Npm
+          </a>
+        </li>
+      </ul>
+
+      <section class="text-center" style="height: 1200px">
+        Scroll down to see the progress bar 👇
+      </section>
+    </div>
+  </body>
+</html>
