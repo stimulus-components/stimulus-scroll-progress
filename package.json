@@ -6,8 +6,8 @@
     "stimulus",
     "stimulusjs",
     "stimulus controller",
-    "rails ujs",
-    "rails scroll-progress"
+    "scroll-progress",
+    "progress-bar"
   ],
   "repository": "git@github.com:stimulus-components/stimulus-scroll-progress.git",
   "bugs": {
