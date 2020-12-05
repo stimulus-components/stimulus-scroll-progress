@@ -2,12 +2,16 @@ import { Controller } from 'stimulus'
 import throttle from 'lodash.throttle'
 
 export default class extends Controller {
+  static values = {
+    throttleDelay: Number
+  }
+
   initialize () {
     this.scroll = this.scroll.bind(this)
   }
 
   connect () {
-    const delay = this.data.get('throttleDelay') || 15
+    const delay = this.throttleDelayValue || 15
 
     if (delay > 0) {
       this.scroll = throttle(this.scroll, delay)
