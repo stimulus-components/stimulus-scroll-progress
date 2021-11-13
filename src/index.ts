@@ -1,4 +1,4 @@
-import { Controller } from 'stimulus'
+import { Controller } from '@hotwired/stimulus'
 import { throttle } from 'lodash'
 
 export default class extends Controller {
@@ -7,7 +7,10 @@ export default class extends Controller {
   throttleDelayValue: number
 
   static values = {
-    throttleDelay: Number
+    throttleDelay: {
+      type: Number,
+      default: 15
+    }
   }
 
   initialize (): void {
@@ -15,10 +18,8 @@ export default class extends Controller {
   }
 
   connect (): void {
-    const delay: number = this.throttleDelayValue || 15
-
-    if (delay > 0) {
-      this.scroll = throttle(this.scroll, delay)
+    if (this.throttleDelayValue > 0) {
+      this.scroll = throttle(this.scroll, this.throttleDelayValue)
     }
 
     window.addEventListener('scroll', this.scroll, { passive: true })

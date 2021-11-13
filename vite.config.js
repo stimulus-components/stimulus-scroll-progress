@@ -7,10 +7,10 @@ module.exports = {
       name: 'stimulus-scroll-progress'
     },
     rollupOptions: {
-      external: ['stimulus', 'lodash'],
+      external: ['@hotwired/stimulus', 'lodash'],
       output: {
         globals: {
-          stimulus: 'Stimulus',
+          '@hotwired/stimulus': 'Stimulus',
           lodash: '_'
         }
       }
