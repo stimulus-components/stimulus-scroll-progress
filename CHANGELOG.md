@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Bump dependencies.
 - Upgrading to Vite `5.x`.
+- Using a `throttle` function without `lodash.throttle`.
 
 ## [4.1.0] - 2022-12-25
 

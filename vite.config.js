@@ -14,11 +14,10 @@ export default defineConfig(({ mode }) => {
         fileName: 'stimulus-scroll-progress'
       },
       rollupOptions: {
-        external: ['@hotwired/stimulus', 'lodash'],
+        external: ['@hotwired/stimulus'],
         output: {
           globals: {
-            '@hotwired/stimulus': 'Stimulus',
-            lodash: '_'
+            '@hotwired/stimulus': 'Stimulus'
           }
         }
       }
