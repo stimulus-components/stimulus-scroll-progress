@@ -1,6 +1,6 @@
 {
   "name": "stimulus-scroll-progress",
-  "version": "4.1.0",
+  "version": "4.2.0",
   "description": "A Stimulus controller to add a progress bar when scrolling.",
   "keywords": [
     "stimulus",
