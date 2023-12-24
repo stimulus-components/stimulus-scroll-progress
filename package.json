@@ -34,7 +34,6 @@
     "@babel/preset-env": "^7.23.6",
     "@babel/preset-typescript": "^7.23.3",
     "@hotwired/stimulus": "^3.2.2",
-    "@types/lodash.throttle": "^4.1.9",
     "autoprefixer": "^10.4.16",
     "np": "^9.2.0",
     "postcss": "^8.4.32",
@@ -48,8 +47,5 @@
   },
   "resolutions": {
     "prettierx": "~0.19.0"
-  },
-  "dependencies": {
-    "lodash.throttle": "^4.1.1"
   }
 }

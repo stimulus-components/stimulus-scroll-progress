@@ -1,5 +1,5 @@
 import { Controller } from '@hotwired/stimulus'
-import { throttle } from 'lodash'
+import { throttle } from './utils'
 
 export default class extends Controller {
   // @ts-ignore
@@ -9,8 +9,8 @@ export default class extends Controller {
   static values = {
     throttleDelay: {
       type: Number,
-      default: 15
-    }
+      default: 15,
+    },
   }
 
   initialize (): void {
